@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+        <meta charset="utf-8" />
+        <title> Umar </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="./Icons/uniregistry-brands.svg">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                   <div class="nav-link-wrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>UMAR</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio-min.jpg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                            </div>
+
+                            <div class="subtitle">
+                                Be realistic about your goals.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/anastasiia-ostapovych-AGoOmIIu13A-unsplash-min.jpg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                            </div>
+
+                            <div class="subtitle">
+                                Be realistic about your goals.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                            </div>
+
+                            <div class="subtitle">
+                                Creating something. As developers, we are constructing new things every day. ...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/gaelle-marcel-YnbJwNXy0YQ-unsplash-min.jpg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                            </div>
+
+                            <div class="subtitle">
+                                Just watching my cats can make me happy.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                            </div>
+
+                            <div class="subtitle">
+                                I always work on a computer with a coffee. It is my lovely habit.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                            </div>
+
+                            <div class="subtitle">
+                                The distance between your dreams and reality is called action.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/luca-bravo-9l_326FISzk-unsplash-min.jpg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                               
+                            </div>
+
+                            <div class="subtitle">
+                                What do you think? Is coding really hard?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        
+                        <div class="portfolio-img-background" style="background-image:url(images/cookie-the-pom-siNDDi9RpVY-unsplash-min.jpg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                               
+                            </div>
+
+                            <div class="subtitle">
+                                First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack. -)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                               
+                            </div>
+
+                            <div class="subtitle">
+                                Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <script>  
+     
+       const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+       portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () =>{
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+       })
+    </script>
+</html>
